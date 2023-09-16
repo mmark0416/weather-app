@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="search-container">
+                <input class="search" type="text" id="search-el" placeholder="Search for a city">
+                <button class="search-btn" id="search-btn-el">
+                    <img class="search-img" src="./images/search.png" alt="Search">
+                </button>
+            </div>
+            <p class="error" id="error-el"></p>
+        </header>
+        <div class="weather" id="weather-el">
+            <main class="main" id="main-el">
+                <img class="main-img" id="weather-img-el" alt="Weather-icon">
+                <p class="celcius" id="celcius-el"></p>
+                <p class="city" id="city-el"></p>
+            </main>
+            <footer class="footer" id="footer-el">
+                <div class="left-container">
+                    <img class="footer-img" src="./images/humidity.png" alt="Humidity">
+                    <div class="humidity-container">
+                        <p class="humidity-percent" id="humidity-percent-el"></p>
+                        <p class="humidity">Humidity</p>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img class="footer-img" src="./images/wind.png" alt="Wind">
+                    <div class="wind-container">
+                        <p class="wind-km-h" id="wind-speed-el"></p>
+                        <p class="wind">Wind speed</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
